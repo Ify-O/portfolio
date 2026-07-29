@@ -28,7 +28,7 @@ Date
 
 27 July 2026
 
-Session
+## Session 1
 
 Project Foundation
 
@@ -240,3 +240,592 @@ This project is intended to grow continuously.
 Each completed cloud project, software project, certification, and technical case study will eventually be integrated into the portfolio.
 
 The objective is not simply to build a website but to build a professional engineering portfolio demonstrating technical growth over time.
+
+
+
+
+
+
+# Development Session
+
+**Date**
+
+28 July 2026
+
+## Session 2
+
+Application Layout
+
+**Duration**
+
+Approximately 20 minutes
+
+---
+
+# Objectives
+
+* Create the shared application layout.
+* Organise reusable layout components.
+* Prepare the project for page development.
+
+---
+
+# Work Completed
+
+✔ Created a reusable `MainLayout` component.
+
+✔ Organised shared components by placing the `Header`, `Footer`, and `Container` in the `common` directory.
+
+✔ Prepared the application to use a consistent layout across all pages.
+
+✔ Maintained the feature-based folder structure established during project setup.
+
+---
+
+# Current Status
+
+Completed
+
+✔ Project foundation complete.
+
+✔ Folder architecture complete.
+
+✔ Shared application layout established.
+
+Next
+
+* Configure React Router with the shared layout.
+* Build the navigation bar.
+* Develop the homepage hero section.
+* Establish the global design system with Tailwind CSS and DaisyUI.
+
+
+
+
+
+
+
+
+
+# ------------------------------------------------------------------
+# Development Session
+# ------------------------------------------------------------------
+
+## Date
+
+29 July 2026
+
+## Session 2
+
+Application Architecture, Styling Strategy & Project Foundation
+
+## Duration
+
+Approximately 2–3 hours
+
+---
+
+# Objectives
+
+Today's objectives were to:
+
+- Finalise the project architecture.
+- Configure React Router.
+- Establish the global styling strategy.
+- Create the shared application layout.
+- Build reusable navigation components.
+- Decide on the portfolio branding and colour palette.
+- Create a long-term development workflow.
+- Prepare the project for feature development.
+
+---
+
+# Work Completed
+
+## Routing
+
+✔ Installed React Router DOM.
+
+✔ Configured BrowserRouter.
+
+✔ Connected all portfolio pages:
+
+- Home
+- About
+- Projects
+- Certifications
+- Experience
+- Contact
+
+---
+
+## Shared Layout
+
+Created a reusable application layout consisting of:
+
+- MainLayout
+- Header
+- Footer
+- Container
+
+The layout is designed to wrap every page and eliminate duplicated code.
+
+---
+
+## Styling Architecture
+
+Several styling approaches were evaluated before deciding on the final architecture.
+
+Instead of relying entirely on Tailwind utility classes inside JSX, a hybrid architecture was adopted.
+
+Final approach:
+
+- Tailwind CSS for layout and responsive utilities.
+- CSS using Tailwind's `@apply` directive for reusable component styling.
+- CSS Variables for branding, colours, spacing and design tokens.
+
+This keeps JSX significantly cleaner while still benefiting from Tailwind's utility-first workflow.
+
+---
+
+## CSS Structure
+
+The previous CSS structure was simplified.
+
+Current structure:
+
+styles/
+
+- global.css
+- components.css
+
+global.css
+
+Contains:
+
+- Design tokens
+- Colour palette
+- Typography
+- Global reset
+- Global variables
+
+components.css
+
+Contains:
+
+- Navigation
+- Buttons
+- Hero
+- Footer
+- Shared reusable components
+
+This two-file architecture was intentionally chosen to reduce unnecessary stylesheet fragmentation.
+
+---
+
+## Colour System
+
+After exploring several luxury-inspired colour palettes, some brand palette was selected.
+
+Primary
+
+#5C0A12
+
+Secondary
+
+#F8F5F2
+
+Accent
+
+#B76E3B
+
+Text
+
+#2E2E2E
+
+Muted
+
+#6B7280
+
+Border
+
+#E8E2DC
+
+The objective is to create a premium, elegant and timeless visual identity rather than following common blue technology themes.
+
+---
+
+## Component Philosophy
+
+A consistent component strategy was established.
+
+React components are responsible only for:
+
+- Structure
+- Content
+- Logic
+
+Visual styling should primarily exist inside CSS.
+
+This keeps JSX readable and encourages reusable styling.
+
+---
+
+## Documentation
+
+The following documentation files now exist:
+
+README.md
+
+Public-facing documentation.
+
+DEVELOPMENT_LOG.md
+
+Engineering history of the project.
+
+DESIGN_SYSTEM.md
+
+Complete design guidelines.
+
+PROJECT_ROADMAP.md
+
+High-level project milestones.
+
+---
+
+## Design Direction
+
+A luxury-inspired portfolio concept was selected.
+
+Key characteristics:
+
+- Premium typography
+- Warm neutral backgrounds
+- Burgundy primary colour
+- Bronze accent colour
+- Large whitespace
+- Minimal visual clutter
+- Professional presentation
+
+The visual goal is to communicate trust, professionalism and technical expertise.
+
+---
+
+## Current Project Status
+
+Completed
+
+✔ Project setup
+
+✔ Folder architecture
+
+✔ React Router
+
+✔ Shared Layout
+
+✔ Styling strategy
+
+✔ Design system foundation
+
+✔ Brand identity
+
+In Progress
+
+Home page
+
+Next
+
+- Build Hero Section
+- Add professional photograph
+- Introduce portfolio statistics
+- Add social links
+- Create call-to-action buttons
+- Implement responsive behaviour
+
+---
+
+# Engineering Decisions
+
+Several important long-term decisions were made today.
+
+The project will prioritise maintainability over rapid development.
+
+Reusable components will be preferred over duplicated code.
+
+Documentation will be updated at the end of every development session.
+
+Major architectural changes should be avoided unless there is a clear technical benefit.
+
+---
+
+# Notes for Future Development
+
+The project foundation is now considered stable.
+
+Future development should focus on implementing features rather than restructuring the architecture.
+
+The next major milestone is building a production-quality Hero section that reflects the established luxury design language.
+
+# ------------------------------------------------------------------
+
+
+
+
+
+# Development Session
+# ------------------------------------------------------------------
+
+## Date
+
+29 July 2026
+
+## Session 3
+
+Application Architecture, Styling Strategy & Project Foundation
+
+## Duration
+
+Approximately 2–3 hours
+
+---
+
+# Objectives
+
+Today's objectives were to:
+
+- Finalise the project architecture.
+- Configure React Router.
+- Establish the global styling strategy.
+- Create the shared application layout.
+- Build reusable navigation components.
+- Decide on the portfolio branding and colour palette.
+- Create a long-term development workflow.
+- Prepare the project for feature development.
+
+---
+
+# Work Completed
+
+## Routing
+
+✔ Installed React Router DOM.
+
+✔ Configured BrowserRouter.
+
+✔ Connected all portfolio pages:
+
+- Home
+- About
+- Projects
+- Certifications
+- Experience
+- Contact
+
+---
+
+## Shared Layout
+
+Created a reusable application layout consisting of:
+
+- MainLayout
+- Header
+- Footer
+- Container
+
+The layout is designed to wrap every page and eliminate duplicated code.
+
+---
+
+## Styling Architecture
+
+Several styling approaches were evaluated before deciding on the final architecture.
+
+Instead of relying entirely on Tailwind utility classes inside JSX, a hybrid architecture was adopted.
+
+Final approach:
+
+- Tailwind CSS for layout and responsive utilities.
+- CSS using Tailwind's `@apply` directive for reusable component styling.
+- CSS Variables for branding, colours, spacing and design tokens.
+
+This keeps JSX significantly cleaner while still benefiting from Tailwind's utility-first workflow.
+
+---
+
+## CSS Structure
+
+The previous CSS structure was simplified.
+
+Current structure:
+
+styles/
+
+- global.css
+- components.css
+
+global.css
+
+Contains:
+
+- Design tokens
+- Colour palette
+- Typography
+- Global reset
+- Global variables
+
+components.css
+
+Contains:
+
+- Navigation
+- Buttons
+- Hero
+- Footer
+- Shared reusable components
+
+This two-file architecture was intentionally chosen to reduce unnecessary stylesheet fragmentation.
+
+---
+
+## Colour System
+
+After exploring several luxury-inspired colour palettes, the final brand palette was selected.
+
+Primary
+
+#5C0A12
+
+Secondary
+
+#F8F5F2
+
+Accent
+
+#B76E3B
+
+Text
+
+#2E2E2E
+
+Muted
+
+#6B7280
+
+Border
+
+#E8E2DC
+
+The objective is to create a premium, elegant and timeless visual identity rather than following common blue technology themes.
+
+---
+
+## Component Philosophy
+
+A consistent component strategy was established.
+
+React components are responsible only for:
+
+- Structure
+- Content
+- Logic
+
+Visual styling should primarily exist inside CSS.
+
+This keeps JSX readable and encourages reusable styling.
+
+---
+
+## Documentation
+
+The following documentation files now exist:
+
+README.md
+
+Public-facing documentation.
+
+DEVELOPMENT_LOG.md
+
+Engineering history of the project.
+
+DESIGN_SYSTEM.md
+
+Complete design guidelines.
+
+PROJECT_ROADMAP.md
+
+High-level project milestones.
+
+---
+
+## Design Direction
+
+A luxury-inspired portfolio concept was selected.
+
+Key characteristics:
+
+- Premium typography
+- Warm neutral backgrounds
+- Burgundy primary colour
+- Bronze accent colour
+- Large whitespace
+- Minimal visual clutter
+- Professional presentation
+
+The visual goal is to communicate trust, professionalism and technical expertise.
+
+---
+
+## Current Project Status
+
+Completed
+
+✔ Project setup
+
+✔ Folder architecture
+
+✔ React Router
+
+✔ Shared Layout
+
+✔ Styling strategy
+
+✔ Design system foundation
+
+✔ Brand identity
+
+In Progress
+
+Home page
+
+Next
+
+- Build Hero Section
+- Add professional photograph
+- Introduce portfolio statistics
+- Add social links
+- Create call-to-action buttons
+- Implement responsive behaviour
+
+---
+
+# Engineering Decisions
+
+Several important long-term decisions were made today.
+
+The project will prioritise maintainability over rapid development.
+
+Reusable components will be preferred over duplicated code.
+
+Documentation will be updated at the end of every development session.
+
+Major architectural changes should be avoided unless there is a clear technical benefit.
+
+---
+
+# Notes for Future Development
+
+The project foundation is now considered stable.
+
+Future development should focus on implementing features rather than restructuring the architecture.
+
+The next major milestone is building a production-quality Hero section that reflects the established luxury design language.
