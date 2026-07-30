@@ -1,0 +1,112 @@
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container-custom {
+  @apply mx-auto max-w-7xl px-8;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header {
+  background: var(--color-primary);
+  box-shadow: var(--shadow);
+}
+
+.header-container {
+  @apply container-custom flex items-center justify-between py-5;
+}
+
+.logo {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-menu {
+  @apply flex items-center gap-8;
+}
+
+.nav-link {
+  color: var(--color-secondary);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-accent);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn {
+  @apply rounded-lg px-6 py-3 font-medium;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: .9;
+}
+
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+  min-height: calc(100vh - 90px);
+
+  @apply flex items-center;
+}
+
+.hero-content {
+  @apply container-custom text-center;
+}
+
+.hero-greeting {
+  color: var(--color-primary);
+
+  @apply mb-4 text-xl;
+}
+
+.hero-title {
+  color: var(--color-primary);
+
+  @apply text-6xl font-bold;
+}
+
+.hero-subtitle {
+  color: var(--color-accent);
+
+  @apply mt-6 text-3xl font-semibold;
+}
+
+.hero-description {
+  color: var(--color-muted);
+
+  @apply mx-auto mt-8 max-w-3xl text-lg;
+}
+
+.hero-buttons {
+  @apply mt-10 flex justify-center gap-4;
+}
