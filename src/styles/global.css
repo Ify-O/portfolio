@@ -1,75 +1,51 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* ==========================================================
-   DESIGN TOKENS
-========================================================== */
+/* =====================================================
+   DESIGN SYSTEM
+===================================================== */
 
 :root {
-  /* Brand */
-  --color-primary: #5c0a12;
-  --color-secondary: #f8f5f2;
-  --color-accent: #b76e3b;
+  --color-primary: #5C0A12;
+  --color-secondary: #F8F5F2;
+  --color-accent: #B76E3B;
 
-  /* Text */
-  --color-text: #2e2e2e;
-  --color-muted: #6b7280;
+  --color-text: #2E2E2E;
+  --color-muted: #6B7280;
+  --color-border: #E8E2DC;
 
-  /* Borders */
-  --color-border: #e8e2dc;
-
-  /* Status */
-  --color-success: #2f855a;
-  --color-error: #c53030;
-
-  /* Layout */
-  --container-width: 1200px;
-  --radius: 12px;
-
-  /* Effects */
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --transition: all 0.3s ease;
+  --color-success: #2F855A;
+  --color-error: #C53030;
 }
 
-/* ==========================================================
+/* =====================================================
    RESET
-========================================================== */
+===================================================== */
 
-*,
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body,
+#root {
+  min-height: 100%;
 }
 
 body {
-  margin: 0;
   background: var(--color-secondary);
   color: var(--color-text);
   font-family: Inter, sans-serif;
   line-height: 1.6;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 button {
-  cursor: pointer;
   font: inherit;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
