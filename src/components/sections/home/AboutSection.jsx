@@ -57,11 +57,12 @@ export default function AboutSection() {
             <div className="about-card-icon">
               <FaGraduationCap />{" "}
             </div>
-            <h3>Continuous Learning</h3>
+            <h3>AI & Continuous Learning</h3>
 
             <p>
-              Always expanding my skills through projects, certifications and
-              hands-on practice.
+              Leveraging AI tools to improve productivity while continuously
+              expanding my skills through certifications, hands-on projects, and
+              emerging technologies.
             </p>
           </div>
 
@@ -72,8 +73,9 @@ export default function AboutSection() {
             <h3>Problem Solver</h3>
 
             <p>
-              Turning complex business challenges into practical digital
-              solutions.
+              Turning complex business challenges into practical, scalable
+              digital solutions through thoughtful design and modern
+              technologies.
             </p>
           </div>
         </div>
