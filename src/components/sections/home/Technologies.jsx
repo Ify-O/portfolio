@@ -9,9 +9,11 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
+  FaGithub,
 } from "react-icons/fa";
 
-import { SiGithubactions } from "react-icons/si";
+import { SiGithubactions, SiVite, SiNotion, SiCanva } from "react-icons/si";
+
 import { TbTerminal2 } from "react-icons/tb";
 
 const technologies = [
@@ -23,8 +25,12 @@ const technologies = [
   { icon: <FaGitAlt />, name: "Git" },
   { icon: <TbTerminal2 />, name: "Bash" },
   { icon: <SiGithubactions />, name: "CI/CD" },
+  { icon: <SiVite />, name: "Vite" },
   { icon: <FaHtml5 />, name: "HTML5" },
   { icon: <FaCss3Alt />, name: "CSS3" },
+  { icon: <FaGithub />, name: "GitHub" },
+  { icon: <SiNotion />, name: "Notion" },
+  { icon: <SiCanva />, name: "Canva" },
   { icon: <FaSlack />, name: "Slack" },
   { icon: <FaTrello />, name: "Trello" },
 ];
