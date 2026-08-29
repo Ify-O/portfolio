@@ -1,8 +1,8 @@
-import { FaCode, FaAws, FaGraduationCap, FaLightbulb } from "react-icons/fa";
+import { FaCode, FaCloud, FaBrain, FaLightbulb } from "react-icons/fa";
 
 export default function AboutSection() {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         {/* LEFT */}
 
@@ -16,10 +16,11 @@ export default function AboutSection() {
           </h2>
 
           <p className="about-description">
-            I'm a software developer and cloud engineer passionate about
-            building secure, scalable applications on AWS. My background in
-            business management allows me to bridge technology and business
-            strategy, creating solutions that deliver real impact.
+            With a background in business management, software development, and
+            AWS cloud computing, I combine business insight with technical
+            skills to solve real-world challenges. I'm passionate about building
+            practical digital solutions that improve efficiency, support growth,
+            and help businesses scale.
           </p>
 
           <a href="/about" className="btn btn-primary">
@@ -43,26 +44,27 @@ export default function AboutSection() {
 
           <div className="about-card">
             <div className="about-card-icon">
-              <FaAws />
+              <FaCloud />
             </div>
 
             <h3>Cloud Computing</h3>
 
             <p>
-              Designing scalable cloud infrastructure using AWS best practices.
+              Designing scalable cloud infrastructure using cloud best
+              practices.
             </p>
           </div>
 
           <div className="about-card">
             <div className="about-card-icon">
-              <FaGraduationCap />{" "}
+              <FaBrain />{" "}
             </div>
             <h3>AI & Continuous Learning</h3>
 
             <p>
-              Leveraging AI tools to improve productivity while continuously
-              expanding my skills through certifications, hands-on projects, and
-              emerging technologies.
+              Leveraging AI to improve productivity while continuously expanding
+              my skills through certifications, hands-on projects, and emerging
+              technologies.
             </p>
           </div>
 
