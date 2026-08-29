@@ -309,7 +309,6 @@
   color: var(--color-primary);
 }
 
-
 /* ==========================================================
    HERO
 ========================================================== */
@@ -635,7 +634,6 @@
     gap: 1.3rem;
   }
 }
-
 
 /* ==========================================================
 ABOUT PAGE
@@ -1189,46 +1187,198 @@ MOBILE
   background: #faf7f3;
 }
 
-.section-label {
+.technologies .section-label {
   text-align: center;
-  color: #d97706;
+  color: var(--color-accent);
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 0.9rem;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
+
+/* =========================
+   TECHNOLOGY GRID
+========================= */
 
 .tech-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  gap: 2rem;
-  width: fit-content;
-  margin: 2rem auto 0;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+
+  display: grid;
+
+  /* 9 items per row = 2 balanced rows */
+  grid-template-columns: repeat(9, 1fr);
+
+  column-gap: 0.5rem;
+  row-gap: 1.6rem;
+
+  justify-items: center;
+  align-items: start;
 }
 
+/* =========================
+   TECHNOLOGY CARD
+========================= */
+
 .tech-card {
-  text-align: center;
+  width: 85px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 65px;
+
+  text-align: center;
+
+  transition: transform 0.3s ease;
 }
 
+/* =========================
+   TECHNOLOGY ICON
+========================= */
+
 .tech-icon {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 0.8rem;
-  border-radius: 50%;
-  color: var(--primary);
-  margin-bottom: 0.75rem;
-  font-size: 2.5rem;
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0.45rem;
+
+  color: var(--color-primary);
+
+  font-size: 2.3rem;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* =========================
+   TECHNOLOGY NAME
+========================= */
+
+.tech-card p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.78rem;
+  font-weight: 500;
+
+  line-height: 1.25;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.tech-card:hover {
+  transform: translateY(-3px);
 }
 
 .tech-card:hover .tech-icon {
-  color: #d97706;
-  transform: translateY(-5px);
+  color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.tech-card:hover p {
+  color: var(--color-primary);
+}
+
+/* =========================
+   TABLET / SMALL DESKTOP
+========================= */
+
+@media (max-width: 1100px) {
+  .tech-grid {
+    max-width: 850px;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .tech-grid {
+    max-width: 600px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .technologies {
+    padding: 2.5rem 0 2.8rem;
+  }
+
+  .technologies .section-label {
+    margin-bottom: 1.8rem;
+  }
+
+  .tech-grid {
+    max-width: 400px;
+    padding: 0 0.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 0.25rem;
+    row-gap: 1.5rem;
+  }
+
+  .tech-card {
+    width: 75px;
+  }
+
+  .tech-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 2.1rem;
+
+    margin-bottom: 0.4rem;
+  }
+
+  .tech-card p {
+    font-size: 0.72rem;
+  }
+}
+
+/* =========================
+   VERY SMALL SCREENS
+========================= */
+
+@media (max-width: 360px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+    row-gap: 1.3rem;
+  }
+
+  .tech-card {
+    width: 70px;
+  }
+
+  .tech-icon {
+    font-size: 1.9rem;
+  }
+
+  .tech-card p {
+    font-size: 0.68rem;
+  }
 }
 
 /* ===========================
