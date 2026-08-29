@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   FaReact,
   FaNodeJs,
@@ -61,8 +63,9 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="featured-projects">
+    <section id="projects" className="featured-projects">
       <div className="container-custom">
+        {/* SECTION HEADER */}
         <p className="section-label">FEATURED PROJECTS</p>
 
         <h2>Some Things I've Built</h2>
@@ -73,28 +76,35 @@ export default function FeaturedProjects() {
           applications.
         </p>
 
+        {/* PROJECT CARDS */}
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
+              {/* PROJECT IMAGE */}
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
               </div>
 
+              {/* PROJECT CONTENT */}
               <div className="project-content">
                 <h3>{project.title}</h3>
 
                 <p>{project.description}</p>
 
+                {/* TECHNOLOGY TAGS */}
                 <div className="project-tags">
                   {project.tags.map((tag) => (
                     <span className="project-tag" key={tag.name}>
                       <span className="tag-icon">{tag.icon}</span>
+
                       {tag.name}
                     </span>
                   ))}
                 </div>
 
+                {/* PROJECT LINKS */}
                 <div className="project-links">
+                  {/* LIVE PROJECT */}
                   {project.live !== "#" && (
                     <a
                       href={project.live}
@@ -106,24 +116,28 @@ export default function FeaturedProjects() {
                     </a>
                   )}
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub />
-                    <span>GitHub</span>
-                  </a>
+                  {/* GITHUB */}
+                  {project.github !== "#" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub />
+                      <span>GitHub</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
           ))}
         </div>
 
+        {/* VIEW ALL PROJECTS */}
         <div className="projects-footer">
-          <a href="/projects" className="view-all-btn">
+          <Link to="/projects" className="view-all-btn">
             View All Projects →
-          </a>
+          </Link>
         </div>
       </div>
     </section>
