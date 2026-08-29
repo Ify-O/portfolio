@@ -33,7 +33,10 @@ export default function Hero() {
               View My Projects
             </a>
 
-            <a href="/resume.pdf" className="btn btn-outline">
+            <a
+              href="/src/assets/Ifeoma_Osegbo_CV.pdf"
+              className="btn btn-outline"
+            >
               Download CV
             </a>
           </div>
