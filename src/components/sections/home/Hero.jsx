@@ -1,14 +1,14 @@
 import profile from "../../../assets/profile.png";
+import cv from "../../../assets/Ifeoma_Osegbo_CV.pdf";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 import { MdOutlineEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        {/* Left */}
+        {/* LEFT: HERO TEXT */}
         <div className="hero-text">
           <p className="hero-greeting">Hello, I'm</p>
 
@@ -19,30 +19,38 @@ export default function Hero() {
           </h1>
 
           <h2 className="hero-headline">
-            Building secure and scalable cloud solutions and modern software.
+            Building secure and scalable cloud solutions and modern software
+            solutions for SMEs.
           </h2>
 
           <p className="hero-description">
-            I build secure cloud infrastructure and modern web applications,
-            combining technology and business strategy to create scalable,
-            reliable, and impactful digital solutions.
+            I combine cloud technology, software development, and business
+            thinking to help businesses build practical, reliable, and scalable
+            digital solutions.
           </p>
 
           <div className="hero-buttons">
-            <a href="/projects" className="btn btn-primary">
+            <a href="#projects" className="btn btn-primary">
               View My Projects
             </a>
 
             <a
-              href="/src/assets/Ifeoma_Osegbo_CV.pdf"
+              href={cv}
               className="btn btn-outline"
+              target="_blank"
+              rel="noreferrer"
             >
               Download CV
             </a>
           </div>
 
           <div className="hero-socials">
-            <a href="https://github.com/Ify-O" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/Ify-O"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
               <FaGithub />
             </a>
 
@@ -50,18 +58,18 @@ export default function Hero() {
               href="https://www.linkedin.com/in/ifeoma-osegbo/"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn"
             >
               <FaLinkedin />
             </a>
 
-            <a href="mailto:YOUR_EMAIL@gmail.com">
+            <a href="mailto:osegboifeoma3@gmail.com" aria-label="Email">
               <MdOutlineEmail />
             </a>
           </div>
         </div>
 
-        {/* Right */}
-
+        {/* RIGHT: PROFILE IMAGE */}
         <div className="hero-image-wrapper">
           <div className="hero-image-frame">
             <div className="hero-circle"></div>
