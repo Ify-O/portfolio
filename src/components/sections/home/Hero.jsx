@@ -20,7 +20,7 @@ export default function Hero() {
 
           <h2 className="hero-headline">
             Building secure and scalable cloud solutions and modern software
-            solutions for SMEs.
+            solutions.
           </h2>
 
           <p className="hero-description">
