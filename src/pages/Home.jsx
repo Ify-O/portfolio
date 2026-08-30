@@ -18,7 +18,6 @@ export default function Home() {
       return;
     }
 
-    // Wait until the homepage has rendered before looking for the section.
     const timer = setTimeout(() => {
       const element = document.getElementById(section);
 
