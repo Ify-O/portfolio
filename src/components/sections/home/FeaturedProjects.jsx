@@ -213,7 +213,12 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="projects-footer">
-          <a href="/projects" className="view-all-btn">
+          <a
+            href="https://github.com/Ify-O"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="view-all-btn"
+          >
             View More Projects
             <span>→</span>
           </a>
