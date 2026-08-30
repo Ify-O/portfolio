@@ -1,7 +1,22 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const navigate = useNavigate();
+
+  const goToProjects = () => {
+    navigate("/?section=projects");
+
+    setTimeout(() => {
+      const projectsSection = document.getElementById("projects");
+
+      if (projectsSection) {
+        projectsSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+  };
 
   return (
     <main className="about-page">
@@ -143,7 +158,7 @@ export default function About() {
             I’m looking for an opportunity where I can bring together my
             communication, business, and technical skills to contribute
             meaningfully to a team. I want to work with a company whose values
-            align with mine-one where I can help solve problems, build better
+            align with mine—one where I can help solve problems, build better
             solutions, support business growth, and continue learning.
           </p>
 
@@ -161,14 +176,22 @@ export default function About() {
               way?
             </p>
 
-            <Link to="/projects" className="view-projects-btn">
+            <button
+              type="button"
+              onClick={goToProjects}
+              className="view-projects-btn"
+            >
               See My Projects →
-            </Link>
+            </button>
           </div>
 
           {/* BACK BUTTON */}
           <div className="about-back">
-            <button className="back-button" onClick={() => navigate(-1)}>
+            <button
+              type="button"
+              className="back-button"
+              onClick={() => navigate(-1)}
+            >
               ← Back
             </button>
           </div>
