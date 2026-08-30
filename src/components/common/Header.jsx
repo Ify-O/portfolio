@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const location = useLocation();
-  const navigate = useNavigate();
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -14,7 +13,6 @@ export default function Header() {
   const goToSection = (sectionId) => {
     closeMenu();
 
-    // If already on the homepage, scroll directly
     if (location.pathname === "/") {
       const section = document.getElementById(sectionId);
 
@@ -28,19 +26,16 @@ export default function Header() {
       return;
     }
 
-    // If on another page, go home first
-    navigate(`/#${sectionId}`);
+    window.location.href = `/#${sectionId}`;
   };
 
   return (
     <header className="header">
       <div className="header-container">
-        {/* Logo */}
         <NavLink to="/" className="logo" onClick={closeMenu}>
           IO
         </NavLink>
 
-        {/* Menu Button */}
         <button
           type="button"
           className="menu-toggle"
@@ -50,54 +45,55 @@ export default function Header() {
         >
           <span className="menu-text">MENU</span>
 
-          <span className="menu-icon">{isMenuOpen ? "✕" : "☰"}</span>
+          <span className="menu-icon">
+            {isMenuOpen ? "✕" : "☰"}
+          </span>
         </button>
       </div>
 
-      {/* Dropdown Menu */}
       {isMenuOpen && (
         <nav className="navigation-menu">
           <ul className="nav-menu">
-            {/* HOME */}
             <li>
               <NavLink to="/" onClick={closeMenu}>
                 Home
               </NavLink>
             </li>
 
-            {/* ABOUT */}
             <li>
-              <button type="button" onClick={() => goToSection("about")}>
+              <button
+                type="button"
+                onClick={() => goToSection("about")}
+              >
                 About Me
               </button>
             </li>
 
-            {/* PROJECTS */}
             <li>
-              <button type="button" onClick={() => goToSection("projects")}>
+              <button
+                type="button"
+                onClick={() => goToSection("projects")}
+              >
                 Projects
               </button>
             </li>
 
-            {/* CERTIFICATIONS */}
             <li>
-              <NavLink to="/certifications" onClick={closeMenu}>
+              <button
+                type="button"
+                onClick={() => goToSection("certifications")}
+              >
                 Certifications
-              </NavLink>
+              </button>
             </li>
 
-            {/* EXPERIENCE */}
             <li>
-              <NavLink to="/experience" onClick={closeMenu}>
-                Experience
-              </NavLink>
-            </li>
-
-            {/* CONTACT */}
-            <li>
-              <NavLink to="/contact" onClick={closeMenu}>
+              <button
+                type="button"
+                onClick={() => goToSection("contact")}
+              >
                 Let's Connect
-              </NavLink>
+              </button>
             </li>
           </ul>
         </nav>
