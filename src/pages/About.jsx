@@ -4,8 +4,10 @@ export default function About() {
   const navigate = useNavigate();
 
   const goToProjects = () => {
-    navigate("/?section=projects");
+    // Go back to the Home page
+    navigate("/");
 
+    // Wait for the Home page to render, then scroll
     setTimeout(() => {
       const projectsSection = document.getElementById("projects");
 
@@ -15,7 +17,7 @@ export default function About() {
           block: "start",
         });
       }
-    }, 100);
+    }, 300);
   };
 
   return (
