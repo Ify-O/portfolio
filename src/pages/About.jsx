@@ -4,20 +4,11 @@ export default function About() {
   const navigate = useNavigate();
 
   const goToProjects = () => {
-    // Go back to the Home page
-    navigate("/");
-
-    // Wait for the Home page to render, then scroll
-    setTimeout(() => {
-      const projectsSection = document.getElementById("projects");
-
-      if (projectsSection) {
-        projectsSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }, 300);
+    navigate("/", {
+      state: {
+        scrollTo: "projects",
+      },
+    });
   };
 
   return (
@@ -49,10 +40,10 @@ export default function About() {
           <p>
             I studied Theatre Arts at university, drawn to expression,
             creativity, and presentation. But while studying, I discovered a
-            growing interest in management. I explored event management, theatre
-            management, and business, and realised I wanted to do more than
-            create. I wanted to build, manage, solve problems, and help things
-            grow.
+            growing interest in management. I explored event management,
+            theatre management, and business, and realised I wanted to do more
+            than create. I wanted to build, manage, solve problems, and help
+            things grow.
           </p>
 
           <p>
@@ -89,8 +80,8 @@ export default function About() {
           <p>
             I soon realised that understanding business growth also meant
             understanding the technology driving it. This led me into cloud
-            computing, software development, and artificial intelligence. I have
-            continued developing my skills in AWS, web development, cloud
+            computing, software development, and artificial intelligence. I
+            have continued developing my skills in AWS, web development, cloud
             technologies, and AI.
           </p>
 
@@ -127,8 +118,8 @@ export default function About() {
             <article className="value-card">
               <h3>Solution-focused</h3>
               <p>
-                When I encounter a problem, my first instinct is to ask, "How do
-                we solve this?"
+                When I encounter a problem, my first instinct is to ask, "How
+                do we solve this?"
               </p>
             </article>
 
