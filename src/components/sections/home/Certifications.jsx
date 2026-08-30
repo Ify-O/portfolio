@@ -24,6 +24,14 @@ const certifications = [
   },
 
   {
+    title: "Software & Web Development",
+    issuer: "Migracode",
+    year: "2026",
+    image: migracodeWebDev,
+    credentialLink: null,
+  },
+
+  {
     title: "Cloud Graduate",
     issuer: "Amazon Web Services",
     year: "Completed",
@@ -46,14 +54,6 @@ const certifications = [
     issuer: "Migracode",
     year: "Completed",
     image: migracodeAws,
-    credentialLink: null,
-  },
-
-  {
-    title: "Software & Web Development",
-    issuer: "Migracode",
-    year: "2026",
-    image: migracodeWebDev,
     credentialLink: null,
   },
 
@@ -99,8 +99,11 @@ export default function Certifications() {
                 <span className="certification-status">
                   {certification.year}
                 </span>
+
                 <h3>{certification.title}</h3>
+
                 <p>{certification.issuer}</p>
+
                 {certification.credentialLink && (
                   <a
                     href={certification.credentialLink}
