@@ -7,68 +7,62 @@ import {
 
 export default function CTA() {
   return (
-    <section className="cta">
+    <section id="contact" className="cta">
       <div className="container-custom">
         <div className="cta-content">
-          {/* Left */}
-
           <div className="cta-left">
             <p className="section-label">LET'S CONNECT</p>
 
-            <h2>Ready for My Next Opportunity</h2>
+            <h2>Let's Build Something Meaningful</h2>
 
             <p className="cta-description">
-              Open to Cloud Engineering, Software Development, and collaborative
-              opportunities where I can contribute, grow, and build impactful
-              solutions.
+              Open to opportunities where business, technology, cloud, and
+              AI come together. I bring business insight, technical skills, and
+              a practical, solution-focused approach to creating value.
             </p>
-
-            <a href="/contact" className="cta-button">
-              Get In Touch →
-            </a>
           </div>
 
-          {/* Divider */}
-
           <div className="cta-divider"></div>
-
-          {/* Right */}
 
           <div className="cta-right">
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
-              <span>your.email@email.com</span>
+
+              <a href="mailto:osegboifeoma3@gmail.com">
+                osegboifeoma3@gmail.com
+              </a>
             </div>
 
             <div className="contact-item">
               <FaMapMarkerAlt className="contact-icon" />
+
               <span>Barcelona, Spain</span>
             </div>
 
             <div className="contact-item">
               <FaLinkedin className="contact-icon" />
+
               <a
-                href="https://linkedin.com/in/your-link"
+                href="https://www.linkedin.com/in/ifeoma-osegbo/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/in/your-link
+                linkedin.com/in/ifeoma-osegbo
               </a>
             </div>
 
             <div className="contact-item">
               <FaGithub className="contact-icon" />
+
               <a
-                href="https://github.com/your-github"
+                href="https://github.com/Ify-O"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                github.com/your-github
+                github.com/Ify-O
               </a>
             </div>
           </div>
-
-          {/* Decorations */}
 
           <div className="cta-dots"></div>
 
