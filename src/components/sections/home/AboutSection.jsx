@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
 import { FaCode, FaCloud, FaBrain, FaLightbulb } from "react-icons/fa";
 
 export default function AboutSection() {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        {/* LEFT */}
-
         <div className="about-left">
           <p className="section-label">ABOUT ME</p>
 
@@ -23,19 +22,19 @@ export default function AboutSection() {
             and help businesses scale.
           </p>
 
-          <a href="/about" className="btn btn-primary">
+          <Link to="/about" className="btn btn-primary">
             More About Me
-          </a>
+          </Link>
         </div>
-
-        {/* RIGHT */}
 
         <div className="about-grid">
           <div className="about-card">
             <div className="about-card-icon">
               <FaCode />
-            </div>{" "}
+            </div>
+
             <h3>Software Development</h3>
+
             <p>
               Building modern, responsive web applications with clean,
               maintainable code.
@@ -57,8 +56,9 @@ export default function AboutSection() {
 
           <div className="about-card">
             <div className="about-card-icon">
-              <FaBrain />{" "}
+              <FaBrain />
             </div>
+
             <h3>AI & Continuous Learning</h3>
 
             <p>
@@ -72,6 +72,7 @@ export default function AboutSection() {
             <div className="about-card-icon">
               <FaLightbulb />
             </div>
+
             <h3>Problem Solver</h3>
 
             <p>
